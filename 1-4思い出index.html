@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>１年４組 クラスの思い出</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: "Yu Gothic", "Hiragino Sans", sans-serif;
+      margin: 0;
+      background: #f5f7fb;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(135deg, #6fb1ff, #9be7ff);
+      color: #fff;
+      text-align: center;
+      padding: 40px 20px 20px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.2rem;
+    }
+    header p {
+      margin: 8px 0 20px;
+    }
+    .hero-image {
+      max-width: 900px;
+      margin: 0 auto 10px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    }
+    .hero-image img {
+      width: 100%;
+      display: block;
+    }
+    nav {
+      background: #ffffff;
+      border-bottom: 1px solid #e0e0e0;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    nav ul {
+      margin: 0;
+      padding: 8px 16px;
+      list-style: none;
+      display: flex;
+      gap: 16px;
+      overflow-x: auto;
+    }
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-size: 0.9rem;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: #f0f4ff;
+      white-space: nowrap;
+    }
+    nav a:hover {
+      background: #dbe6ff;
+    }
+    main {
+      max-width: 1000px;
+      margin: 20px auto 40px;
+      padding: 0 16px;
+    }
+    section {
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 20px 18px 24px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    section h2 {
+      margin-top: 0;
+      border-left: 6px solid #6fb1ff;
+      padding-left: 10px;
+      font-size: 1.3rem;
+    }
+    .two-column {
+      display: grid;
+      grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+      gap: 16px;
+    }
+    .two-column img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 12px;
+      margin-top: 10px;
+    }
+    .gallery figure {
+      margin: 0;
+      background: #f7f9ff;
+      border-radius: 10px;
+      padding: 6px;
+      text-align: center;
+      font-size: 0.8rem;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 8px;
+      display: block;
+    }
+    .messages {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 12px;
+      margin-top: 10px;
+    }
+    .message-card {
+      background: #f9fbff;
+      border-radius: 10px;
+      padding: 10px 12px;
+      border-left: 4px solid #6fb1ff;
+      font-size: 0.9rem;
+    }
+    .message-card .name {
+      font-weight: bold;
+      margin-bottom: 4px;
+      font-size: 0.85rem;
+      color: #555;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.8rem;
+      color: #777;
+      padding: 20px 0 30px;
+    }
+    @media (max-width: 700px) {
+      header h1 {
+        font-size: 1.6rem;
+      }
+      .two-column {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>１年４組 クラスの思い出</h1>
+  <p>みんなで過ごした１年間の記録
+合唱曲あさがお　
+１年４組37人</p>
+  <div class="hero-image">
+    <!-- クラス全体写真をここに -->
+    <img src="class_photo.jpg" alt="クラス集合写真">
+  </div>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="#about">クラス紹介</a></li>
+    <li><a href="#events">行事の思い出</a></li>
+    <li><a href="#gallery">フォトギャラリー</a></li>
+    <li><a href="#messages">メッセージ</a></li>
+  </ul>
+</nav>
+
+<main>
+  <section id="about">
+    <h2>クラス紹介</h2>
+    <div class="two-column">
+      <div>
+        <p>1年4組、37人のクラス。にぎやかで、でもやるときはやるメンバーがそろった１年でした。</p>
+        <p>朝のホームルームから放課後まで、笑い声が絶えない教室。テスト前はみんなで教え合ったり、体育祭は最後まで諦めないで取組んで結果背中渡りリレーは１位を取りました！</p>
+        <p>ここに、クラスの雰囲気やエピソードを書いていけます。</p>
+      </div>
+      <div>
+        <!-- 教室の写真など -->
+        <img src="classroom.jpg" alt="教室の様子">
+      </div>
+    </div>
+  </section>
+
+  <section id="events">
+    <h2>行事の思い出</h2>
+    <p>4月8日「水」令和７年度第68回入学式　5月2日「金」体育祭　5月23日校外学習「福島方面」　11月24日「合唱コンクール」
+<section id="messages">
+  <h2>メッセージ</h2>
+  <p>佐藤よしなり先生へクラスメイトからのメッセージです。</p>
+
+  <div class="messages">
+
+    <!-- 1〜37人分のテンプレート -->
+    <div class="message-card"><div class="name">1. ○○さん</div><p>コメントをここに入れてください。</p></div>
+    <div class="message-card"><div class="name">2. ○○さん</div><p>コメントをここに入れてください。</p></div>
+    <div class="message-card"><div class="name">3. ○○さん</div><p>コメントをここに入れてください。</p></div>
+    <div class="message-card"><div class="name">4. ○○さん</div><p>コメントをここに入れてください。</p></div>
+    <div class="message-card"><div class="name">5. ○○さん</div><p>コメントをここに入れてください。</p></div>
+    <div class="message-card"><div class="name">6. ○○さん</div><p>コメントをここに入れてください。</p></div>
+    <div class="message-card"><div class="name">7. ○○さん</div><p>コメントをここに入れてください。</p></div>
+    <div class="message-card"><div class="name">8. ○○さん</div><p>コメントをここに入れてください。</p></div>
+    <div class="message-card"><div class="name">9. ○○さん</div><p>コメントをここに入れてください。</p></div>
+    <div class="message-card"><div class="name">10. ○○さん</div><p>コメントをここに入れてください。</p></div>
+
+    <div class="message-card"><div class="name">11. ○○さん</div><p>コメントをここに入れてください。</p></div>
+    <div class="message-card"><div class="name">12. ○○さん</div><p>コメントをここに入れてください。</p></div>
+    <div class="message-card"><div class="name">13. ○○さん</div><p>コメントをここに入れてください。</p></div>
+    <div class="message-card"><div class="name">14. ○○さん</div><p>コメントをここに入れてください。</p></div>
+    <div class="message-card"><div class="name">15. ○○さん</div><p>コメントをここに入れてください。</p></div>
+    <div class="message-card"><div class="name">16. ○○さん</div><p>コメントをここに入れてください。</p></div>
+    <div class="message-card"><div class="name">17. ○○さん</div><p>コメントをここに入れてください。</p></div>
+    <div class="message-card"><div class="name">18. ○○さん</div><p>コメントをここに入れてください。</p></div>
+    <div class="message-card"><div class="name">19. ○○さん</div><p>コメントをここに入れてください。</p></div>
+    <div class="message-card"><div class="name">20. ○○さん</div><p>コメントをここに入れてください。</p></div>
+
+    <div class="message-card"><div class="name">21. ○○さん</div><p>コメントをここに入れてください。</p></div>
+    <div class="message-card"><div class="name">22. ○○さん</div><p>コメントをここに入れてください。</p></div>
+    <div class="message-card"><div class="name">23. ○○さん</div><p>コメントをここに入れてください。</p></div>
+    <div class="message-card"><div class="name">24. ○○さん</div><p>コメントをここに入れてください。</p></div>
+    <div class="message-card"><div class="name">25. ○○さん</div><p>コメントをここに入れてください。</p></div>
+    <div class="message-card"><div class="name">26. ○○さん</div><p>コメントをここに入れてください。</p></div>
+    <div class="message-card"><div class="name">27. ○○さん</div><p>コメントをここに入れてください。</p></div>
+    <div class="message-card"><div class="name">28. ○○さん</div><p>コメントをここに入れてください。</p></div>
+    <div class="message-card"><div class="name">29. ○○さん</div><p>コメントをここに入れてください。</p></div>
+    <div class="message-card"><div class="name">30. ○○さん</div><p>コメントをここに入れてください。</p></div>
+
+    <div class="message-card"><div class="name">31. ○○さん</div><p>コメントをここに入れてください。</p></div>
+    <div class="message-card"><div class="name">32. ○○さん</div><p>コメントをここに入れてください。</p></div>
+    <div class="message-card"><div class="name">33. ○○さん</div><p>コメントをここに入れてください。</p></div>
+    <div class="message-card"><div class="name">34. ○○さん</div><p>コメントをここに入れてください。</p></div>
+    <div class="message-card"><div class="name">35. 山田　梓琥さん</div><p>コメントをここに入れてください。</p></div>
+    <div class="message-card"><div class="name">36. ○○さん</div><p>コメントをここに入れてください。</p></div>
+    <div class="message-card"><div class="name">37. ○○さん</div><p>コメントをここに入れてください。</p></div>
+
+  </div>
+</section>
+
+<section id="teachers">
+  <h2>教科担当の先生からのメッセージ</h2>
+  <p>1年間お世話になった先生方からのひとことです。</p>
+
+  <div class="messages">
+
+    <!-- 国語 -->
+    <div class="message-card">
+      <div class="name">国語：山田先生</div>
+      <p></p>
+    </div>
+
+    <!-- 数学 -->
+    <div class="message-card">
+      <div class="name">数学：佐藤先生</div>
+      <p></p>
+    </div>
+
+    <!-- 英語 -->
+    <div class="message-card">
+      <div class="name">英語：箕輪先生</div>
+      <p></p>
+    </div>
+
+    <!-- 理科 -->
+    <div class="message-card">
+      <div class="name">理科：中島先生</div>
+      <p></p>
+    </div>
+
+    <!-- 社会 -->
+    <div class="message-card">
+      <div class="name">社会：齋藤先生</div>
+      <p></p>
+    </div>
+
+    <!-- 音楽 -->
+    <div class="message-card">
+      <div class="name">音楽：藤井先生</div>
+      <p></p>
+    </div>
+
+    <!-- 美術 -->
+    <div class="message-card">
+      <div class="name">美術：西木先生</div>
+      <p></p>
+    </div>
+
+    <!-- 技術・家庭 -->
+    <div class="message-card">
+      <div class="name">技術・家庭：菊地先生・山部先生</div>
+      <p></p>
+    </div>
+
+    <!-- 体育 -->
+    <div class="message-card">
+      <div class="name">体育：山根先生・竹内先生・高久先生</div>
+      <p></p>
+    </div>
+
+    <!-- その他（必要なら追加） -->
+    <div class="message-card">
+      <div class="name">その他：○○先生</div>
+      <p></p>
+    </div>
+
+  </div>
+</section>
