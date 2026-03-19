@@ -305,3 +305,155 @@
 
   </div>
 </section>
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>1年4組 メッセージページ</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: "Yu Gothic", "Hiragino Sans", sans-serif;
+      margin: 0;
+      background: #f5f7fb;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(135deg, #6fb1ff, #9be7ff);
+      color: #fff;
+      text-align: center;
+      padding: 30px 20px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    nav {
+      background: #ffffff;
+      border-bottom: 1px solid #e0e0e0;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    nav ul {
+      margin: 0;
+      padding: 8px 16px;
+      list-style: none;
+      display: flex;
+      gap: 16px;
+      overflow-x: auto;
+    }
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-size: 0.9rem;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: #f0f4ff;
+      white-space: nowrap;
+    }
+    nav a:hover {
+      background: #dbe6ff;
+    }
+    main {
+      max-width: 1000px;
+      margin: 20px auto 40px;
+      padding: 0 16px;
+    }
+    section {
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 20px 18px 24px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    section h2 {
+      margin-top: 0;
+      border-left: 6px solid #6fb1ff;
+      padding-left: 10px;
+      font-size: 1.3rem;
+    }
+    .messages {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 12px;
+      margin-top: 10px;
+    }
+    .message-card {
+      background: #f9fbff;
+      border-radius: 10px;
+      padding: 10px 12px;
+      border-left: 4px solid #6fb1ff;
+      font-size: 0.9rem;
+    }
+    .message-card .name {
+      font-weight: bold;
+      margin-bottom: 4px;
+      font-size: 0.85rem;
+      color: #555;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.8rem;
+      color: #777;
+      padding: 20px 0 30px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>1年4組 メッセージページ</h1>
+  <p>先生とクラスメイトからのメッセージ</p>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="index.html">トップページへ戻る</a></li>
+  </ul>
+</nav>
+
+<main>
+
+  <!-- 教科担当の先生 -->
+  <section id="teachers">
+    <h2>教科担当の先生からのメッセージ</h2>
+    <div class="messages">
+
+      <div class="message-card"><div class="name">国語：○○先生</div><p>コメントをここに入れてください。</p></div>
+      <div class="message-card"><div class="name">数学：○○先生</div><p>コメントをここに入れてください。</p></div>
+      <div class="message-card"><div class="name">英語：○○先生</div><p>コメントをここに入れてください。</p></div>
+      <div class="message-card"><div class="name">理科：○○先生</div><p>コメントをここに入れてください。</p></div>
+      <div class="message-card"><div class="name">社会：○○先生</div><p>コメントをここに入れてください。</p></div>
+      <div class="message-card"><div class="name">音楽：○○先生</div><p>コメントをここに入れてください。</p></div>
+      <div class="message-card"><div class="name">美術：○○先生</div><p>コメントをここに入れてください。</p></div>
+      <div class="message-card"><div class="name">技術・家庭：○○先生</div><p>コメントをここに入れてください。</p></div>
+      <div class="message-card"><div class="name">体育：○○先生</div><p>コメントをここに入れてください。</p></div>
+
+    </div>
+  </section>
+
+  <!-- クラスメイト37人 -->
+  <section id="students">
+    <h2>クラスメイト37人からのメッセージ</h2>
+    <div class="messages">
+
+      <!-- 1〜37人分 -->
+      <!-- 必要に応じて名前とコメントを入れ替えてね -->
+      <div class="message-card"><div class="name">1. ○○さん</div><p>コメントをここに入れてください。</p></div>
+      <div class="message-card"><div class="name">2. ○○さん</div><p>コメントをここに入れてください。</p></div>
+      <div class="message-card"><div class="name">3. ○○さん</div><p>コメントをここに入れてください。</p></div>
+      <!-- …省略（37人分続く）… -->
+      <div class="message-card"><div class="name">37. ○○さん</div><p>コメントをここに入れてください。</p></div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  &copy; 1年4組 クラスの思い出
+</footer>
+
+</body>
+</html>
