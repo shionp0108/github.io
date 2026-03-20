@@ -149,8 +149,8 @@
 <header>
   <h1>１年４組 クラスの思い出</h1>
   <p>みんなで過ごした１年間の記録
-合唱曲あさがお　
-１年４組37人</p>
+<p>合唱曲あさがお　
+<p>１年４組37人</p>
   <div class="hero-image">
     <!-- クラス全体写真をここに -->
     <img src="class_photo.jpg" alt="クラス集合写真">
@@ -163,7 +163,7 @@
     <li><a href="#events">行事の思い出</a></li>
     <li><a href="#gallery">フォトギャラリー</a></li>
     <li><a href="#messages">メッセージ</a></li>
-  </ul>
+    </ul>
 </nav>
 
 <main>
@@ -296,6 +296,81 @@
       <p></p>
     </div>
 
-    
-  </div>
-</section>
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.message-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+<style>
+  /* ここに追加 */
+  .message-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .message-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  }
+</style>
+.message-card 
+<h2>4組AIチャット</h2>
+
+<!-- AIの回答が出る場所 -->
+<div id="chat-box" style="
+  border:1px solid #ccc;
+  padding:10px;
+  height:250px;
+  overflow-y:auto;
+  background:#f9f9f9;
+  border-radius:8px;
+  margin-bottom:10px;
+">
+  <p><strong>4組AI:</strong> こんにちは！4組のことなら何でも聞いてね。</p>
+</div>
+
+<!-- ★ここが“回答の下”に来る質問入力欄！ -->
+<div style="display:flex; gap:10px;">
+  <input id="user-input" placeholder="質問を入力" style="flex:1; padding:8px; border-radius:6px; border:1px solid #ccc;">
+  <button onclick="sendMessage()" style="padding:8px 15px; border-radius:6px;">送信</button>
+</div>
+<script>
+const answers = {
+  "人数": "１年４組は３７人だよ！",
+  "担任": "担任の先生は〇〇先生だよ。",
+  "体育祭": "背中渡りリレーで１位を取ったよ！",
+  "合唱": "合唱曲は『あさがお』だよ。",
+  "特徴": "４組はにぎやかで、やるときはやるクラスだよ！"
+
+};
+
+
+function sendMessage() {
+  const input = document.getElementById("user-input").value;
+  const chatBox = document.getElementById("chat-box");
+
+  if (input.trim() === "") return;
+
+  // ユーザーのメッセージ
+  chatBox.innerHTML += `<p><strong>あなた:</strong> ${input}</p>`;
+
+  // AIの返事
+  let reply = "ごめん、その質問はまだ勉強中だよ！";
+
+  for (let key in answers) {
+    if (input.includes(key)) {
+      reply = answers[key];
+      break;
+    }
+  }
+
+  chatBox.innerHTML += `<p><strong>4組AI:</strong> ${reply}</p>`;
+
+  // 下までスクロール
+  chatBox.scrollTop = chatBox.scrollHeight;
+
+  // 入力欄を空に
+  document.getElementById("user-input").value = "";
+}
+</script>
